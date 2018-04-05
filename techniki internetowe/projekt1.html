@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="projekt1.css" type="text/css" />
+		<script  src="projekt1.js"></script>
+		<title> Projekt 1</title>
+	</head>
+	<body>
+		<article>
+		<h1>Spis treści</h1>
+		<nav>
+			<ul>
+				<li><a href="#opis_zjawiska">Opis zjawiska</a></li>
+				<li><a href="#opis_animacji">Opis animacji</a></li>		
+				<li><a href="#zmiana_danych">Zmiana danych</a></li>		
+				<li><a href="#animacja">Animacja podwójnego wahadła</a></li>		
+			</ul>
+		</nav>
+		<h2 id="opis_zjawiska">Czym jest chaos?</h2>
+			<p>Chaos deterministyczny jest to własność równań lub układów równań, polegająca na dużej wrażliwości rozwiązań na dowolnie małe zaburzenie parametrów. Dotyczy to zwykle nieliniowych równań różniczkowych i różnicowych, opisujących układy dynamiczne.</p>
+			<p>Pierwotna teoria chaosu powstała na gruncie nauk ścisłych. Podwaliny pod nią stworzył Edward Lorenz, który analizował modele prognozowania pogody. Przez przypadek odkrył, że bardzo mała zmiana danych wejściowych może spowodować kolosalną, zupełnie niespodziewaną różnicę w wynikach końcowych. Tyczy się to szczególnie układów dynamicznych, mających odzwierciedlenie między innymi w zmianach pogody. Zależności prowadzące do takiego, a nie innego obrotu sprawy, są bardzo skomplikowane i nawet miniaturowa modyfikacja jednego z czynników może spowodować, że zamiast bezwietrznej pogody nadejdzie tornado.</p>
+		<h2 id="opis_animacji">Opis animacji</h2>
+			<p>Poniższe animacje przedstawiają dwa układy składające się z dwóch połączonych ze sobą ciał. Obie animacje oparte są o te same wzory i wartości początkowe. Aby przekonać się o wrażliwości rozwiązań, dla drugiej animacji nieznacznie zmienimy wartość przyspieszenia ziemskiego. Po chwili można zaobserwować znaczną rozbieżność pomiędzy układami.</p>
+		
+		<h2 id="zmiana_danych">Zmiana parametrów</h2>
+		<fieldset>
+		<legend>Wprowadź nowe dane w poniższe pola</legend>
+			<form id = "form" name = "form" method = "post">
+				Przyspieszenie grawitacyjne:<br><br>
+				Animacja 1 <input type="text" name = "A1_G" value="9.8"/><br><br>
+				Animacja 2 <input type="text" name="A2_G" value="9.800000001"/><br><br>
+				Szybkość animacji <input type="text" name="dt" value="0.1"/><br><br>
+			</form>
+		</fieldset>
+		
+		<h2 id="animacja">Animacja podwójnego wahadła</h2>
+
+		<canvas id="canvas1" width="300" height="300"></canvas>
+		<canvas id="canvas2" width="300" height="300"></canvas>
+		<button onclick="draw(event)">Rozpocznij animacje</button>
+		
+		
+		
+		<footer>Magdalena Gajek, grupa 1, środa 12:10</footer>
+		</article>
+	</body>
+</html>

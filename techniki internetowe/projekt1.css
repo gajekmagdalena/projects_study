@@ -1,0 +1,35 @@
+p{
+	margin: 2px; 
+	font: arial, sans-serif;
+} 
+
+a {
+color: #F7F7f2;
+}
+
+a:hover {
+color:#03FFDD;
+}
+
+h1,h2{
+	color: #FA6A03;
+}
+
+nav, fieldset{
+	border:#03FFDD 1px solid;
+	font-weight: bold;
+}
+
+canvas{
+	border:#03FFDD 5px solid;
+	background-color:white;
+}
+
+body{
+	background-color:#474740;
+	color: #F7F7f2;
+	text-align:left;
+	
+}
+
+
